@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'nombre';
+    src: url(../fonts/MoiraiOne-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'body';
+    src: url(../fonts/Gidole-Regular.ttf) format('truetype');
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    margin: 0;
+    font-family: 'body';
+}
+.nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    justify-content: space-around;
+    background-color: white;
+}
+.nav ul{
+    text-align: center;
+    
+}
+.nav li {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+}
+
+.nav li a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    padding: 10px 15px;
+    
+}
+.nav li > a{
+    min-width: 160px;
+}
+.nav li a:hover {
+    box-shadow: inset 0px -3px 0px 0px rgb(39, 37, 62);
+    
+}
+.nav li ul{
+    position: absolute;
+    z-index: 1000;
+    white-space: nowrap;
+}
+
+.nav li ul li{
+    display: none;
+    width: 100%;
+}
+.nav li:hover ul li{
+    display: flex;
+    text-align: left;
+}
+.nav li ul li a:hover{
+    background-color: rgb(39, 37, 62);
+    color: white;
+}
+.cabecera{
+    background-image: url("../img/fondo4.jpg");
+    background-position: center;
+    font-size: 60px;
+    padding-left: 50px;
+    color: white;
+    text-align: center;
+    display: flex;
+    text-align: center;
+
+}
+.logo img{
+    height: 120px;
+    vertical-align: middle;
+}
+.nombre{
+    margin-left: 430px;
+    margin-top: 10px;
+    font-family: 'nombre';
+    font-weight: bold;
+    vertical-align: middle;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(39, 37, 62);
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'body';
+}
+footer ul li{
+    margin-bottom: 15px;
+}
+footer ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+
+}
+.social{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    margin-top: 30px;
+    border-top: 2px solid white;
+    padding-top: 20px;
+}
+.social img{
+    height:40px;
+    list-style: none;
+}
+.social img:hover{
+    transform: scale(1.15);
+}
