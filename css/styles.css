@@ -90,13 +90,14 @@ header{
     vertical-align: middle;
 }
 footer{
-    position: fixed;
     bottom: 0;
     background-color: rgb(39, 37, 62);
     width: 100%;
     text-align: center;
     padding-top: 20px;
     font-family: 'body';
+    margin-top: 15px;
+
 }
 footer ul li{
     margin-bottom: 15px;
@@ -105,6 +106,7 @@ footer ul li a{
     list-style: none;
     text-decoration: none;
     color: white;
+
 
 }
 .social{
@@ -119,13 +121,15 @@ footer ul li a{
 .social img{
     height:40px;
     list-style: none;
+    transition: transform 0.2s ease;
 }
 .social img:hover{
     transform: scale(1.15);
 }
 .main {
     display: flex;
-    margin-right: 250px; /* Espacio para el lateral fijo */
+    margin-right: 20px;
+    font-family: 'body';
 }
   
 .izquierda {
@@ -135,7 +139,7 @@ footer ul li a{
   
 .contenido,
 .reseñas {
-    border: 1px solid #ccc;
+    border: 1px solid rgb(39, 37, 62);
     padding: 15px;
     margin-bottom: 20px;
     background-color: #f2f2f2;
@@ -144,13 +148,11 @@ footer ul li a{
   
 .lateral {
     width: 250px;
-    background-color: #e6f7ff;
-    border-left: 1px solid #ccc;
-    border-top: 1px solid #ccc;
+    border-left: 2px solid rgb(39, 37, 62);
     padding: 15px;
-    position: fixed;
-    right: 0;
-    top: 179px;
-    height: 100vh;
+    position:sticky;
+    margin-top: 20px;
+    margin-right: 0;
     overflow-y: auto;
+    margin-bottom: 40px;
 }
