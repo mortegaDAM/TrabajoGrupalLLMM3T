@@ -123,3 +123,34 @@ footer ul li a{
 .social img:hover{
     transform: scale(1.15);
 }
+.main {
+    display: flex;
+    margin-right: 250px; /* Espacio para el lateral fijo */
+}
+  
+.izquierda {
+    flex: 1;
+    padding: 20px;
+}
+  
+.contenido,
+.reseñas {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    margin-right: 20px;
+}
+  
+.lateral {
+    width: 250px;
+    background-color: #e6f7ff;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 15px;
+    position: fixed;
+    right: 0;
+    top: 179px;
+    height: 100vh;
+    overflow-y: auto;
+}
