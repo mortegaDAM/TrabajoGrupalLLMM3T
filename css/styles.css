@@ -156,3 +156,113 @@ footer ul li a{
     overflow-y: auto;
     margin-bottom: 40px;
 }
+
+/* Para ocultar el desbordamiento de la imagen*/
+
+.contenidolowcost {
+    overflow: hidden;
+}
+
+/* imagen de la familia colocada a la izquierda dejando el texto a su alrededor*/
+.imgpresu {
+    float: left;
+    width: 40rem;
+    height: 25rem;
+    margin: 20px 20px 20px 20px;
+
+}
+
+/* imagen de la comida colocada a la derecha dejando el texto a su alrededor*/
+.imgcomi {
+    float: right;
+    width: 20rem;
+    height: 20rem;
+    margin: 40px 20px 40px 20px;
+
+
+}
+
+/* para centrar solo el eslogan sin usar html*/
+.textcent {
+    text-align: center;
+}
+
+/* para que la lista no quede pegada a la izquierda*/
+
+ul,
+li {
+    margin-left: 1rem;
+}
+
+/* hover en el enlace que lleva al menú*/
+
+.menulc:hover {
+    background-color: rgba(73, 150, 212, 0.712);
+    color: rgb(251, 255, 4);
+}
+
+/* Las tablas son complicadas, he jugado con los porcentajes, dandole un 80% de la pantalla máximo 90%*/
+
+table {
+    margin: auto;
+    width: 80%;
+    max-width: 90%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+table caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+table thead {
+    font-size: 2rem;
+}
+
+table,
+td,
+th {
+    border: solid rgb(124, 126, 247) 1px;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.caja-aviso {
+    background-color: #c5e6cb;
+    padding: 15px;
+    margin: 30px 0;
+    font-family: 'body';
+    font-weight: bold;
+}
+
+.contenidodeluxe table {
+    margin: auto;
+    width: 80%;
+    max-width: 90%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    color: #000;
+}
+.contenidodeluxe caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contenidodeluxe td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
