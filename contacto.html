@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+
+<body class="contacto">
     <header>
         <div class="cabecera">
             <div class="logo">
@@ -17,56 +19,147 @@
             </div>
         </div>
         <ul class="nav">
-            <li><a href="#">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="#">Quiénes somos</a></li>
             <li><a href="#">Areas de actuación</a>
                 <ul>
-                    <li><a href="#">Entrenamiento previo</a></li>
-                    <li><a href="#">Simulador de viaje</a></li>
                     <li><a href="lowcost.html">Experiencias Low-Cost</a></li>
                     <li><a href="premium.html">Experiencias Premium</a></li>
+                    <li><a href="entrenamiento-previo.html">Entrenamiento previo</a></li>
+                    <li><a href="simulador-viajes.html">Simulador de viaje</a></li>
                 </ul>
             </li>
             <li><a href="#">Noticias</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </header>
+    <h1 class="contacto">CONTÁCTANOS</h1><br>
     <div class="main">
-        <div class="izquierda">
-          <div class="contenido">
-            <h2>Contenido</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum odio saepe aliquam corporis! Voluptate, atque totam dicta voluptates vel dolorum tempora nemo veniam inventore similique doloremque neque culpa? Illo, cum.
-            Aliquid rem placeat ullam commodi dolor, nisi cum ab consequatur similique? Sed sunt similique reiciendis, ducimus odio quaerat cumque ut, voluptate rem distinctio suscipit quisquam, dolorum vitae quod aut quo?
-            Voluptatem ipsa possimus quis quidem asperiores consequatur minima ullam neque accusantium, eaque id harum. Eveniet velit unde excepturi laborum numquam possimus fugiat, quos pariatur quibusdam consectetur, repellat doloribus culpa est!
-            Facilis debitis maxime neque, aliquid adipisci laudantium. Officiis quos dolorum est odit dolor a debitis cumque earum numquam, quam natus quo suscipit possimus dignissimos optio ut aspernatur in id excepturi!
-            Adipisci debitis maiores id ducimus neque sequi autem eaque consequatur tempore maxime itaque libero nulla officia cupiditate voluptatibus ipsa ipsam fugiat nobis, quasi eligendi tempora. Deserunt dolore magnam quos quo.</p>
-            <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempora, perferendis eaque odio sapiente assumenda placeat ullam nihil maxime delectus modi, ad nesciunt a vitae possimus quidem qui molestiae quod.
-            Itaque quis minus aperiam est amet dolor corrupti illo sequi ducimus beatae ipsam, voluptas quia quidem adipisci eaque quo facere laudantium quibusdam exercitationem iusto consequuntur nihil, eligendi atque culpa! Velit.
-            Architecto, non ad earum voluptas minima nulla ea illum eligendi autem maxime recusandae eum! Veniam sequi commodi, eos illum fuga cupiditate voluptatum! Laudantium quis fugit ex commodi adipisci incidunt optio.
-            Nobis itaque perspiciatis id quisquam. Quos necessitatibus aperiam dicta nam, dignissimos odio eaque debitis, officia, officiis eligendi adipisci? Saepe temporibus sed dolore ab repudiandae modi quia beatae fuga voluptatem ipsum.
-            Ab minus eaque non obcaecati consectetur modi nobis accusamus numquam adipisci dolor amet officia ipsum est, porro enim voluptas reprehenderit voluptate nemo dolorum illum temporibus blanditiis nostrum atque illo! At?    
+
+        <form action="mailto:darcangel@gmail.com" method="post">
+            <fieldset>
+                <legend>DATOS PERSONALES</legend>
+                <div class="fila-doble">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="campo">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                    </div>
+                </div>
+                <div class="fila-doble">
+                    <div class="campo">
+                        <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+                    </div>
+                    <div class="campo">
+                        <label for="planeta">Planeta de Nacimiento</label>
+                        <select name="planetas">
+                            <option value="1">La Tierra</option>
+                            <option value="2">Namek</option>
+                            <option value="3">Endor</option>
+                            <option value="4">Krypton</option>
+                            <option value="5">Mongo</option>
+                            <option value="6">Tatooine</option>
+                            <option value="7">Pandora</option>
+                            <option value="8">Otros del Sistema Solar</option>
+                            <option value="9">NS/NC</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="fila-doble">
+                    <div class="campo">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" name="correo" id="correo" placeholder="Email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="(+Prefijo) Teléfono">
+                    </div>
+                </div>
+                <div class="campo fila-sola">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" name="direccion" id="direccion" placeholder="Calle, Nº, Piso">
+                </div>
+                <div class="fila-doble">
+                    <div class="campo">
+                        <label for="planetavi">Planeta</label>
+                        <input type="text" name="planetavi" id="planetavi" placeholder="Planeta que habita">
+                    </div>
+                    <div class="campo">
+                        <label for="paishabi">País del Planeta</label>
+                        <input type="text" name="paishabi" id="paishabi" placeholder="País del planeta que habita">
+                    </div>
+                </div>
+                <div class="fila-doble">
+                    <div class="campo">
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
+                    </div>
+                    <div class="campo">
+                        <label for="codigo_postal">Código Postal</label>
+                        <input type="number" name="codigo_postal" id="codigo_postal" placeholder="Código Postal">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>MOTIVO DE TU TRANSMISIÓN</legend>
+                <div>
+                    <label for="motivo1"><input type="checkbox" name="motivo1"> Viajes Interestelares</label>
+                    <label for="motivo2"><input type="checkbox" name="motivo2"> Viajes Low-Cost</label>
+                    <label for="motivo3"><input type="checkbox" name="motivo3"> Viajes Deluxe</label>
+                </div>
+                <div>
+                    <label for="motivo4"><input type="checkbox" name="motivo4"> Preparación para viajes
+                        Interestelares</label>
+                    <label for="motivo5"><input type="checkbox" name="motivo5"> Regala Experiencias</label>
+                    <label for="motivo6"><input type="checkbox" name="motivo6"> Cápsula criogénica para
+                        vacaciones</label>
+                </div>
+                <div>
+                    <label for="motivo7"><input type="checkbox" name="motivo7"> Inscripción curso de Namekiano</label>
+                    <label for="motivo8"><input type="checkbox" name="motivo8"> Negocios</label>
+                    <label for="motivo9"><input type="checkbox" name="motivo9"> Alquiler naves</label>
+                </div>
+                <div>
+                    <label for="motivo10"><input type="checkbox" name="motivo10"> Información general</label>
+                    <label for="motivo11"><input type="checkbox" name="motivo11"> Trabajar con nosotros</label>
+                    <label for="motivo12"><input type="checkbox" name="motivo12"> Quejas/Reclamaciones</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>HOUSTON TENEMOS UN PROBLEMA</legend>
+                <label class="label-mensaje">Si tuviste un problema indícanos el motivo.</label>
+                <label for="cancelacion"><input type="radio" name="cancelacion" value="CANCELACIÓN"> CANCELACIÓN
+                    VIAJE</label>
+                <label for="retraso"><input type="radio" name="retraso" value="RETRASO"> RETRASO EN EL VIAJE</label>
+                <label for="cobro"><input type="radio" name="cobro" value="COBRO"> COBRO INDEBIDO</label>
+                <label for="otros"><input type="radio" name="otros" value="OTROS"> OTROS</label>
+            </fieldset>
+            <fieldset>
+                <legend>SI MARCASTE OTROS. DEJA AQUÍ TU MOTIVO DE CONTACTO.</legend>
+                <div class="campo">
+                    <label class="label-mensaje">500 caracteres max.</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí..."
+                        maxlength="500"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>SI TE INTERESA TRABAJAR CON NOSOTROS ENVÍANOS TU CV.</legend>
+                <div class="campo">
+                    <label for="cv"><input type="file" name="cvadjunto" accept=".pdf"></label>
+                </div>
+            </fieldset>
+            <div class="botones">
+                <button type="submit" class="botonnave" title="Enviar"></button>
+                <button type="reset" class="botonnave reset" title="Borrar"></button>
             </div>
-          <div class="reseñas">
-            <h2>Reseñas</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet perferendis reprehenderit ea id quae, odit debitis modi ipsam enim fugit quod quas nam porro sit voluptates tenetur, at quis accusantium.
-            Eligendi corrupti ut est, rem, magni illum explicabo vel eveniet, doloremque animi voluptatum. Esse, dolores, dolorem nemo fuga velit ad ullam iusto quia doloremque fugit numquam id officiis, vero fugiat.
-            Labore magni, et amet quo voluptatem eaque eveniet nostrum voluptatibus eius atque vel quam veniam consectetur mollitia officiis reprehenderit aspernatur quas fugiat nemo sit dolorem assumenda repellendus natus? Rem, est.
-            Nemo, assumenda ab deserunt culpa odit nisi, vitae explicabo sint fuga facere perferendis quasi id. Nesciunt saepe asperiores quisquam ducimus quos quidem dolore quibusdam pariatur? Quam harum voluptate ipsa eos?
-            Amet ad commodi nam enim doloremque consequuntur officiis ipsum qui totam similique animi vero sit in aut aliquam velit ut quos quibusdam temporibus, voluptatem voluptatibus debitis. Molestiae laboriosam architecto doloribus!</p>
-            <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime non distinctio odio quisquam quas quod eum dignissimos. Debitis vero corporis praesentium saepe, distinctio consectetur et, ea eveniet laudantium assumenda dolorem?
-            Exercitationem aliquam explicabo, maiores iure aliquid quos magnam nobis, non officiis dicta similique modi neque illo repudiandae ut, incidunt debitis expedita. Saepe corporis distinctio, sunt aut aliquam totam eligendi blanditiis!
-            Quae, animi! Distinctio fugit dignissimos iure? Facere provident error nam nobis deleniti? Ducimus animi aliquid repellendus laboriosam ex error! Deserunt doloribus, enim ducimus odio eum accusamus vitae aut impedit? Magnam.
-            Asperiores placeat nulla provident laboriosam. Culpa unde voluptate doloremque, atque quaerat quam quis iure nesciunt adipisci? Ea dolor alias possimus placeat mollitia voluptates officiis omnis, modi distinctio tempora adipisci similique.
-            Repellat nobis magni tenetur minima eaque culpa at quia maiores eum ab illo labore odit, hic itaque quo sit vel officia fuga iure libero dolore distinctio incidunt alias praesentium! Deleniti.
-            Quis dolorum, expedita vitae odit labore vero dolorem quisquam pariatur eaque molestiae eligendi rem consectetur molestias inventore harum officiis sed, illo aut quibusdam? Vero odit perspiciatis a eum ipsa excepturi?
-            Facere delectus, accusamus corrupti nobis numquam explicabo quibusdam error hic, optio repudiandae eum iusto vel eos quas, dolore adipisci! Veniam mollitia hic architecto recusandae facilis aliquam nobis, accusamus nihil consequatur.
-            </div>
-        </div>
-        <div class="lateral">
-          <h2>Lateral</h2>
-          <p>Menú o información adicional fija a la derecha.</p>
-        </div>
+        </form>
     </div>
+    </div>
+
     <footer>
         <ul>
             <li><a href="#">Atención al cliente</a></li>
@@ -80,4 +173,5 @@
         </ul>
     </footer>
 </body>
+
 </html>
