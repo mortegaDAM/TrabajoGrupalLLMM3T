@@ -2,19 +2,23 @@
     font-family: 'nombre';
     src: url(../fonts/MoiraiOne-Regular.ttf) format('truetype');
 }
+
 @font-face {
     font-family: 'body';
     src: url(../fonts/Gidole-Regular.ttf) format('truetype');
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
-header{
+
+header {
     width: 100%;
     margin: 0;
     font-family: 'body';
 }
+
 .nav {
     list-style: none;
     display: flex;
@@ -23,10 +27,12 @@ header{
     justify-content: space-around;
     background-color: white;
 }
-.nav ul{
+
+.nav ul {
     text-align: center;
-    
+
 }
+
 .nav li {
     display: inline-block;
     vertical-align: top;
@@ -40,34 +46,40 @@ header{
     color: black;
     display: inline-block;
     padding: 10px 15px;
-    
+
 }
-.nav li > a{
+
+.nav li>a {
     min-width: 160px;
 }
+
 .nav li a:hover {
     box-shadow: inset 0px -3px 0px 0px rgb(39, 37, 62);
-    
+
 }
-.nav li ul{
+
+.nav li ul {
     position: absolute;
     z-index: 1000;
     white-space: nowrap;
 }
 
-.nav li ul li{
+.nav li ul li {
     display: none;
     width: 100%;
 }
-.nav li:hover ul li{
+
+.nav li:hover ul li {
     display: flex;
     text-align: left;
 }
-.nav li ul li a:hover{
+
+.nav li ul li a:hover {
     background-color: rgb(39, 37, 62);
     color: white;
 }
-.cabecera{
+
+.cabecera {
     background-image: url("../img/fondo4.jpg");
     background-position: center;
     font-size: 60px;
@@ -78,18 +90,21 @@ header{
     text-align: center;
 
 }
-.logo img{
+
+.logo img {
     height: 120px;
     vertical-align: middle;
 }
-.nombre{
+
+.nombre {
     margin-left: 430px;
     margin-top: 10px;
     font-family: 'nombre';
     font-weight: bold;
     vertical-align: middle;
 }
-footer{
+
+footer {
     bottom: 0;
     background-color: rgb(39, 37, 62);
     width: 100%;
@@ -99,17 +114,21 @@ footer{
     margin-top: 15px;
 
 }
-footer ul li{
+
+footer ul li {
     margin-bottom: 15px;
+    list-style-type: none;
 }
-footer ul li a{
+
+footer ul li a {
     list-style: none;
     text-decoration: none;
     color: white;
 
 
 }
-.social{
+
+.social {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -118,25 +137,28 @@ footer ul li a{
     border-top: 2px solid white;
     padding-top: 20px;
 }
-.social img{
-    height:40px;
+
+.social img {
+    height: 40px;
     list-style: none;
     transition: transform 0.2s ease;
 }
-.social img:hover{
+
+.social img:hover {
     transform: scale(1.15);
 }
+
 .main {
     display: flex;
     margin-right: 20px;
     font-family: 'body';
 }
-  
+
 .izquierda {
     flex: 1;
     padding: 20px;
 }
-  
+
 .contenido,
 .reseñas {
     border: 1px solid rgb(39, 37, 62);
@@ -145,22 +167,22 @@ footer ul li a{
     background-color: #f2f2f2;
     margin-right: 20px;
 }
-  
-.lateral {
-    width: 250px;
-    border-left: 2px solid rgb(39, 37, 62);
-    padding: 15px;
-    position:sticky;
-    margin-top: 20px;
-    margin-right: 0;
-    overflow-y: auto;
-    margin-bottom: 40px;
-}
 
 /* Para ocultar el desbordamiento de la imagen*/
 
 .contenidolowcost {
     overflow: hidden;
+}
+
+.lateral {
+    width: 250px;
+    border-left: 2px solid rgb(39, 37, 62);
+    padding: 15px;
+    position: sticky;
+    margin-top: 20px;
+    margin-right: 0;
+    overflow-y: auto;
+    margin-bottom: 40px;
 }
 
 /* imagen de la familia colocada a la izquierda dejando el texto a su alrededor*/
@@ -189,8 +211,7 @@ footer ul li a{
 
 /* para que la lista no quede pegada a la izquierda*/
 
-ul,
-li {
+.servicios{
     margin-left: 1rem;
 }
 
