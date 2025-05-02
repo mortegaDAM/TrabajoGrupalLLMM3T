@@ -397,5 +397,116 @@ body.simulador-viajes {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
     line-height: 1.6;
 }
+.descripcion-simulador h2 {
+    text-align: center;
+    color: gold;
+    margin-bottom: 20px;
+}
+.descripcion-simulador strong {
+    color: #ffd700;
+}
+.descripcion-simulador em {
+    color: coral;
+    font-style: 'italic';
+}
+
+/* --------------QUIENES SOMOS---------------- */
+
+.quienes-somos-body{
+    background-image: url(../img/fondo2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+.quienes-somos {
+    width: 50%;
+    height: 50%;
+    margin:2.5% auto;
+    padding: 20px;
+    background-color: #0e0e2c;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    font-family: 'body';
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.quienes-somos h2 {
+    text-align: center;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.quienes-somos em {
+    color: #ccc;
+    font-style: 'italic';
+}
+
+.quienes-somos strong {
+    color: #ffd700;
+}
+.astro {
+    position: relative; /* Establece un contexto para posicionar hijos con absolute */
+    width: 100%; /* O un ancho fijo si lo prefieres */
+    height: 300px; /* Ajusta según necesites */
+  }
+  
+  /* Imagen del astronauta con cohete */
+  .astro-cohete {
+    position: absolute;
+    top: 25rem;      /* Ajusta posición vertical */
+    left: 12rem;     /* Ajusta posición horizontal */
+    width: 120px;   /* Tamaño opcional */
+    
+  }
+  
+  /* Imagen del astronauta con globos */
+  .astro-globos {
+    position: absolute;
+    top: 30rem;
+    right: 12rem; /* Ajusta posición horizontal */
+    width: 120px;
+   
+  }
+  .astro-love {
+    position: absolute;
+    top:15%;
+    left: 65%;
+   width: 100px;
+    
+  }
+  .astro-super {
+    position: absolute;
+    top:75%;
+    left: 34%;
+   width: 100px;
+    
+  }
+  .flotando {
+    animation: flotar 3s ease-in-out infinite;
+  }
+  
+  @keyframes flotar {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+
 
 
