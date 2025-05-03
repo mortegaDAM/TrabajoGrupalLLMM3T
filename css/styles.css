@@ -171,18 +171,6 @@ footer ul li a {
     margin-right: 20px;
 }
 
-/* Para ocultar el desbordamiento de la imagen*/
-
-.contenidolowcost {
-    overflow: hidden;
-}
-
-.contenidodeluxe {
-    background-color: rgba(255, 255, 255, 0.85);
-    border: 2px solid gold;
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
-}
-
 .lateral {
     width: 250px;
     border-left: 2px solid rgb(39, 37, 62);
@@ -194,120 +182,6 @@ footer ul li a {
     margin-bottom: 40px;
 }
 
-/* imagen de la familia colocada a la izquierda dejando el texto a su alrededor*/
-.imgpresu {
-    float: left;
-    width: 40rem;
-    height: 25rem;
-    margin: 20px 20px 20px 20px;
-
-}
-
-/* imagen de la comida colocada a la derecha dejando el texto a su alrededor*/
-.imgcomi {
-    float: right;
-    width: 20rem;
-    height: 20rem;
-    margin: 40px 20px 40px 20px;
-}
-
-/* para centrar solo el eslogan sin usar html*/
-.textcent {
-    text-align: center;
-}
-
-/* para que la lista no quede pegada a la izquierda*/
-
-.servicios {
-    margin-left: 1rem;
-}
-
-.imgdeluxe {
-    float: right;
-    width: 40rem;
-    height: 25rem;
-    margin: 20px 20px 20px 20px;
-}
-
-/* hover en el enlace que lleva al menú*/
-
-.menulc:hover {
-    background-color: rgba(73, 150, 212, 0.712);
-    color: rgb(251, 255, 4);
-}
-
-
-
-
-
-/*-------------------------MENÚS-----------------------------*/
-/*-------  Las tablas son complicadas, he jugado con los porcentajes,
- dandole un 80% de la pantalla, máximo 90% para que no se viesen raras o deformadas--------*/
-
-table {
-    margin: auto;
-    width: 80%;
-    max-width: 90%;
-    border-collapse: collapse;
-    background-color: #f9f9f9;
-    color: #000;
-}
-
-table caption {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 10px;
-}
-
-table thead {
-    font-size: 2rem;
-}
-
-table,
-td,
-th {
-    border: solid rgb(124, 126, 247) 1px;
-    text-align: center;
-}
-
-th {
-    font-weight: bold;
-}
-
-td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: center;
-}
-
-.caja-aviso {
-    background-color: #c5e6cb;
-    padding: 15px;
-    margin: 30px 0;
-    font-family: 'body';
-    font-weight: bold;
-}
-
-.contenidodeluxe table {
-    margin: auto;
-    width: 80%;
-    max-width: 90%;
-    border-collapse: collapse;
-    background-color: #f9f9f9;
-    color: #000;
-}
-
-.contenidodeluxe caption {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 10px;
-}
-
-.contenidodeluxe td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: center;
-}
 
 /* ------------------- ENTRENAMIENTO PREVIO -----------------  */
 
@@ -550,7 +424,292 @@ body.simulador-viajes {
     line-height: 1.6;
 }
 
-/*----------------------- CUESTIONARIO ---------------------- */
+.descripcion-simulador h2 {
+    text-align: center;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.descripcion-simulador strong {
+    color: #ffd700;
+}
+
+.descripcion-simulador em {
+    color: coral;
+    font-style: 'italic';
+}
+
+/* --------------QUIENES SOMOS---------------- */
+
+.quienes-somos-body {
+    background-image: url(../img/fondo2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.quienes-somos {
+    width: 50%;
+    height: 50%;
+    margin: 2.5% auto;
+    padding: 20px;
+    background-color: #0e0e2c;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    font-family: 'body';
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.quienes-somos h2 {
+    text-align: center;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.quienes-somos em {
+    color: #ccc;
+    font-style: 'italic';
+}
+
+.quienes-somos strong {
+    color: #ffd700;
+}
+
+.astro {
+    position: relative;
+    /* Establece un contexto para posicionar hijos con absolute */
+    width: 100%;
+    /* O un ancho fijo si lo prefieres */
+    height: 300px;
+    /* Ajusta según necesites */
+}
+
+/* Imagen del astronauta con cohete */
+.astro-cohete {
+    position: absolute;
+    top: 25rem;
+    /* Ajusta posición vertical */
+    left: 12rem;
+    /* Ajusta posición horizontal */
+    width: 120px;
+    /* Tamaño opcional */
+
+}
+
+/* Imagen del astronauta con globos */
+.astro-globos {
+    position: absolute;
+    top: 30rem;
+    right: 12rem;
+    /* Ajusta posición horizontal */
+    width: 120px;
+
+}
+
+.astro-love {
+    position: absolute;
+    top: 15%;
+    left: 65%;
+    width: 100px;
+
+}
+
+.astro-super {
+    position: absolute;
+    top: 75%;
+    left: 34%;
+    width: 100px;
+
+}
+
+.flotando {
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*----------------------- LOW COST & PREMIUM DELUXE ---------------------- */
+
+.contenidolowcost {
+    overflow: hidden;
+}
+
+.contenidopremium {
+    overflow: hidden;
+    background: linear-gradient(to bottom, #110351, #000000);
+    color: rgba(248, 241, 24, 0.897);
+    border-radius: 5px;
+}
+
+
+
+/* imagen de la familia colocada a la izquierda dejando el texto a su alrededor*/
+
+.imgpresu {
+    float: left;
+    width: 40rem;
+    height: 25rem;
+    margin: 20px 20px 20px 20px;
+    border: 3px solid black;
+    border-radius: 15px; 
+
+}
+
+/* imagen de la comida colocada a la derecha dejando el texto a su alrededor*/
+
+.imgcomi {
+    float: right;
+    width: 20rem;
+    height: 20rem;
+    margin: 40px 20px 40px 20px;
+    border-radius: 15px; 
+    border: 3px solid rgb(145, 8, 85);
+}
+
+/* para centrar solo el eslogan sin usar html*/
+
+.textcent {
+    text-align: center;
+}
+
+/* para que la lista no quede pegada a la izquierda*/
+
+.servicios {
+    margin-left: 1rem;
+}
+
+.imgdeluxe {
+    float: right;
+    width: 40rem;
+    height: 25rem;
+    margin: 20px 20px 20px 20px;
+    border: 3px solid rgb(183, 215, 2);
+    border-radius: 15px; 
+
+}
+
+/* hover en el enlace de lowcost y premium que lleva al menú (de comida)*/
+
+menulcprem{
+    color: rgba(248, 241, 24, 0.897);
+}
+
+.menulc:hover {
+    background-color: rgba(73, 150, 212, 0.712);
+    color: rgb(251, 255, 4);
+}
+
+.menulcprem:hover {
+    background-color: rgba(170, 212, 73, 0.712);
+    color: rgb(251, 255, 4);
+}
+
+/* El link hacía que las letras en deluxe se quedasen oscuras, así que
+he puesto un atributo visited para que conserve el color de la fuente */
+
+.menulcprem:visited {
+    color: inherit; 
+}
+/*-------------------------MENÚS (de comida y bebida)-----------------------------*/
+/*-------  Las tablas son complicadas con CSS, he jugado con los porcentajes,
+ dandole un 80% de la pantalla, máximo 90% para que no se viesen raras o deformadas--------*/
+
+
+table {
+    margin: auto;
+    width: 80%;
+    max-width: 90%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+table caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+table thead {
+    font-size: 2rem;
+}
+
+table,
+td,
+th {
+    border: solid rgb(124, 126, 247) 1px;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.caja-aviso {
+    background-color: #c5e6cb;
+    padding: 15px;
+    margin: 30px 0;
+    font-family: 'body';
+    font-weight: bold;
+}
+
+.contenidodeluxe {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid gold;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+}
+
+.contenidodeluxe table {
+    margin: auto;
+    width: 80%;
+    max-width: 90%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+.contenidodeluxe caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contenidodeluxe td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+
+/*----------------------- FORMULARIO CONTACTO ---------------------- */
 
 body.contacto {
     background-image: url(../img/optimized.webp);
@@ -676,7 +835,7 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
     border: solid 1px yellow;
-    
+
 }
 
 .botonnave.reset {
