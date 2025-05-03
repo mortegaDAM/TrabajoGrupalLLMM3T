@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="contacto">
+    <header>
+        <div class="cabecera">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="nombre">
+                EasySpace
+            </div>
+        </div>
+        <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Areas de actuación</a>
+                <ul>
+                    <li><a href="lowcost.html">Experiencias Low-Cost</a></li>
+                    <li><a href="premium.html">Experiencias Premium</a></li>
+                    <li><a href="entrenamiento-previo.html">Entrenamiento previo</a></li>
+                    <li><a href="simulador-viajes.html">Simulador de viaje</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+    <h1 class="contacto">CONTÁCTANOS</h1><br>
+    <div class="main">
+
+        <form action="mailto:darcangel@gmail.com" method="post">
+            <fieldset>
+                <legend>DATOS PERSONALES</legend>
+                <div class="fila-doble">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="campo">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                    </div>
+                </div>
+                <div class="fila-doble">
+                    <div class="campo">
+                        <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+                    </div>
+                    <div class="campo">
+                        <label for="planeta">Planeta de Nacimiento</label>
+                        <select name="planetas">
+                            <option value="1">La Tierra</option>
+                            <option value="2">Namek</option>
+                            <option value="3">Endor</option>
+                            <option value="4">Krypton</option>
+                            <option value="5">Mongo</option>
+                            <option value="6">Tatooine</option>
+                            <option value="7">Pandora</option>
+                            <option value="8">Otros del Sistema Solar</option>
+                            <option value="9">NS/NC</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="fila-doble">
+                    <div class="campo">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" name="correo" id="correo" placeholder="Email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="(+Prefijo) Teléfono">
+                    </div>
+                </div>
+                <div class="campo fila-sola">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" name="direccion" id="direccion" placeholder="Calle, Nº, Piso">
+                </div>
+                <div class="fila-doble">
+                    <div class="campo">
+                        <label for="planetavi">Planeta</label>
+                        <input type="text" name="planetavi" id="planetavi" placeholder="Planeta que habita">
+                    </div>
+                    <div class="campo">
+                        <label for="paishabi">País del Planeta</label>
+                        <input type="text" name="paishabi" id="paishabi" placeholder="País del planeta que habita">
+                    </div>
+                </div>
+                <div class="fila-doble">
+                    <div class="campo">
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
+                    </div>
+                    <div class="campo">
+                        <label for="codigo_postal">Código Postal</label>
+                        <input type="number" name="codigo_postal" id="codigo_postal" placeholder="Código Postal">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>MOTIVO DE TU TRANSMISIÓN</legend>
+                <div>
+                    <label for="motivo1"><input type="checkbox" name="motivo1"> Viajes Interestelares</label>
+                    <label for="motivo2"><input type="checkbox" name="motivo2"> Viajes Low-Cost</label>
+                    <label for="motivo3"><input type="checkbox" name="motivo3"> Viajes Deluxe</label>
+                </div>
+                <div>
+                    <label for="motivo4"><input type="checkbox" name="motivo4"> Preparación para viajes
+                        Interestelares</label>
+                    <label for="motivo5"><input type="checkbox" name="motivo5"> Regala Experiencias</label>
+                    <label for="motivo6"><input type="checkbox" name="motivo6"> Cápsula criogénica para
+                        vacaciones</label>
+                </div>
+                <div>
+                    <label for="motivo7"><input type="checkbox" name="motivo7"> Inscripción curso de Namekiano</label>
+                    <label for="motivo8"><input type="checkbox" name="motivo8"> Negocios</label>
+                    <label for="motivo9"><input type="checkbox" name="motivo9"> Alquiler naves</label>
+                </div>
+                <div>
+                    <label for="motivo10"><input type="checkbox" name="motivo10"> Información general</label>
+                    <label for="motivo11"><input type="checkbox" name="motivo11"> Trabajar con nosotros</label>
+                    <label for="motivo12"><input type="checkbox" name="motivo12"> Quejas/Reclamaciones</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>HOUSTON TENEMOS UN PROBLEMA</legend>
+                <label class="label-mensaje">Si tuviste un problema indícanos el motivo.</label>
+                <label for="cancelacion"><input type="radio" name="cancelacion" value="CANCELACIÓN"> CANCELACIÓN
+                    VIAJE</label>
+                <label for="retraso"><input type="radio" name="retraso" value="RETRASO"> RETRASO EN EL VIAJE</label>
+                <label for="cobro"><input type="radio" name="cobro" value="COBRO"> COBRO INDEBIDO</label>
+                <label for="otros"><input type="radio" name="otros" value="OTROS"> OTROS</label>
+            </fieldset>
+            <fieldset>
+                <legend>SI MARCASTE OTROS. DEJA AQUÍ TU MOTIVO DE CONTACTO.</legend>
+                <div class="campo">
+                    <label class="label-mensaje">500 caracteres max.</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí..."
+                        maxlength="500"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>SI TE INTERESA TRABAJAR CON NOSOTROS ENVÍANOS TU CV.</legend>
+                <div class="campo">
+                    <label for="cv"><input type="file" name="cvadjunto" accept=".pdf"></label>
+                </div>
+            </fieldset>
+            <div class="botones">
+                <button type="submit" class="botonnave" title="Enviar"></button>
+                <button type="reset" class="botonnave reset" title="Borrar"></button>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="#">Atención al cliente</a></li>
+            <li><a href="#">Localizaciones</a></li>
+            <li><a href="#">Trabaja con nosotros</a></li>
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="img/x.png" alt="twitter"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

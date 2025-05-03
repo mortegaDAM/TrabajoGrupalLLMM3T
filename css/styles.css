@@ -2,11 +2,13 @@
     font-family: 'nombre';
     src: url(../fonts/MoiraiOne-Regular.ttf) format('truetype');
 }
+
 @font-face {
     font-family: 'body';
     src: url(../fonts/Gidole-Regular.ttf) format('truetype');
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     cursor: url('../img/cursorCohete.png') 16 16, auto;
@@ -14,11 +16,12 @@
 }
 
 
-header{
+header {
     width: 100%;
     margin: 0;
     font-family: 'body';
 }
+
 .nav {
     list-style: none;
     display: flex;
@@ -27,10 +30,12 @@ header{
     justify-content: space-around;
     background-color: white;
 }
-.nav ul{
+
+.nav ul {
     text-align: center;
-    
+
 }
+
 .nav li {
     display: inline-block;
     vertical-align: top;
@@ -44,34 +49,40 @@ header{
     color: black;
     display: inline-block;
     padding: 10px 15px;
-    
+
 }
-.nav li > a{
+
+.nav li>a {
     min-width: 160px;
 }
+
 .nav li a:hover {
     box-shadow: inset 0px -3px 0px 0px rgb(39, 37, 62);
-    
+
 }
-.nav li ul{
+
+.nav li ul {
     position: absolute;
     z-index: 1000;
     white-space: nowrap;
 }
 
-.nav li ul li{
+.nav li ul li {
     display: none;
     width: 100%;
 }
-.nav li:hover ul li{
+
+.nav li:hover ul li {
     display: flex;
     text-align: left;
 }
-.nav li ul li a:hover{
+
+.nav li ul li a:hover {
     background-color: rgb(39, 37, 62);
     color: white;
 }
-.cabecera{
+
+.cabecera {
     background-image: url("../img/fondo4.jpg");
     background-position: center;
     font-size: 60px;
@@ -82,18 +93,21 @@ header{
     text-align: center;
 
 }
-.logo img{
+
+.logo img {
     height: 120px;
     vertical-align: middle;
 }
-.nombre{
+
+.nombre {
     margin-left: 430px;
     margin-top: 10px;
     font-family: 'nombre';
     font-weight: bold;
     vertical-align: middle;
 }
-footer{
+
+footer {
     bottom: 0;
     background-color: rgb(39, 37, 62);
     width: 100%;
@@ -103,17 +117,21 @@ footer{
     margin-top: 15px;
 
 }
-footer ul li{
+
+footer ul li {
     margin-bottom: 15px;
+    list-style-type: none;
 }
-footer ul li a{
+
+footer ul li a {
     list-style: none;
     text-decoration: none;
     color: white;
 
 
 }
-.social{
+
+.social {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -122,25 +140,28 @@ footer ul li a{
     border-top: 2px solid white;
     padding-top: 20px;
 }
-.social img{
-    height:40px;
+
+.social img {
+    height: 40px;
     list-style: none;
     transition: transform 0.2s ease;
 }
-.social img:hover{
+
+.social img:hover {
     transform: scale(1.15);
 }
+
 .main {
     display: flex;
     margin-right: 20px;
     font-family: 'body';
 }
-  
+
 .izquierda {
     flex: 1;
     padding: 20px;
 }
-  
+
 .contenido,
 .reseñas {
     border: 1px solid rgb(39, 37, 62);
@@ -151,12 +172,12 @@ footer ul li a{
     background-color: #f2f2f2;
     margin-right: 20px;
 }
-  
+
 .lateral {
     width: 250px;
     border-left: 2px solid rgb(39, 37, 62);
     padding: 15px;
-    position:sticky;
+    position: sticky;
     margin-top: 20px;
     margin-right: 0;
     overflow-y: auto;
@@ -236,14 +257,15 @@ h2{
 /* ------------------- ENTRENAMIENTO PREVIO -----------------  */
 
 
-body.entrenamiento-previo{
+body.entrenamiento-previo {
     background-image: url(../img/fondo.jpg);
     background-attachment: fixed;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
-h1.entrenamiento-previo{
+
+h1.entrenamiento-previo {
     margin-top: 50px;
     text-align: center;
     font-size: 50px;
@@ -251,6 +273,7 @@ h1.entrenamiento-previo{
     color: rgb(222, 28, 28);
     font-family: "nombre";
 }
+
 .container_cards {
     max-width: 1200px;
     margin: auto;
@@ -387,8 +410,8 @@ body.simulador-viajes {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    
-    
+
+
 
 }
 
@@ -417,6 +440,7 @@ body.simulador-viajes {
     0% {
         transform: perspective(1000px) rotateY(0deg);
     }
+
     100% {
         transform: perspective(1000px) rotateY(360deg);
     }
@@ -452,11 +476,12 @@ body.simulador-viajes {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 500px; /* espacio entre el slider y la descripción */
+    gap: 500px;
+    /* espacio entre el slider y la descripción */
     margin-top: 50px;
     margin-right: 100px;
     padding: 0 30px;
-   
+
 }
 
 .descripcion-simulador {
@@ -469,14 +494,17 @@ body.simulador-viajes {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
     line-height: 1.6;
 }
+
 .descripcion-simulador h2 {
     text-align: center;
     color: gold;
     margin-bottom: 20px;
 }
+
 .descripcion-simulador strong {
     color: #ffd700;
 }
+
 .descripcion-simulador em {
     color: coral;
     font-style: 'italic';
@@ -484,7 +512,7 @@ body.simulador-viajes {
 
 /* --------------QUIENES SOMOS---------------- */
 
-.quienes-somos-body{
+.quienes-somos-body {
     background-image: url(../img/fondo2.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -496,12 +524,13 @@ body.simulador-viajes {
     display: flex;
     flex-direction: column;
     position: relative;
-    
+
 }
+
 .quienes-somos {
     width: 50%;
     height: 50%;
-    margin:2.5% auto;
+    margin: 2.5% auto;
     padding: 20px;
     background-color: #0e0e2c;
     color: #fff;
@@ -526,109 +555,159 @@ body.simulador-viajes {
 .quienes-somos strong {
     color: #ffd700;
 }
+
 .astro {
-    position: relative; /* Establece un contexto para posicionar hijos con absolute */
-    width: 100%; /* O un ancho fijo si lo prefieres */
-    height: 300px; /* Ajusta según necesites */
-  }
-  
-  /* Imagen del astronauta con cohete */
-  .astro-cohete {
+    position: relative;
+    /* Establece un contexto para posicionar hijos con absolute */
+    width: 100%;
+    /* O un ancho fijo si lo prefieres */
+    height: 300px;
+    /* Ajusta según necesites */
+}
+
+/* Imagen del astronauta con cohete */
+.astro-cohete {
     position: absolute;
-    top: 25rem;      /* Ajusta posición vertical */
-    left: 12rem;     /* Ajusta posición horizontal */
-    width: 120px;   /* Tamaño opcional */
-    
-  }
-  
-  /* Imagen del astronauta con globos */
-  .astro-globos {
+    top: 25rem;
+    /* Ajusta posición vertical */
+    left: 12rem;
+    /* Ajusta posición horizontal */
+    width: 120px;
+    /* Tamaño opcional */
+
+}
+
+/* Imagen del astronauta con globos */
+.astro-globos {
     position: absolute;
     top: 30rem;
-    right: 12rem; /* Ajusta posición horizontal */
+    right: 12rem;
+    /* Ajusta posición horizontal */
     width: 120px;
-   
-  }
-  .astro-love {
+
+}
+
+.astro-love {
     position: absolute;
-    top:15%;
+    top: 15%;
     left: 65%;
-   width: 100px;
-    
-  }
-  .astro-super {
+    width: 100px;
+
+}
+
+.astro-super {
     position: absolute;
-    top:75%;
+    top: 75%;
     left: 34%;
-   width: 100px;
-    
-  }
-  .flotando {
+    width: 100px;
+
+}
+
+.flotando {
     animation: flotar 3s ease-in-out infinite;
-  }
-  
-  @keyframes flotar {
+}
+
+@keyframes flotar {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     50% {
-      transform: translateY(-20px);
+        transform: translateY(-20px);
     }
+
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  }
-  
+}
 
-
-
-
-
-/* Para ocultar el desbordamiento de la imagen*/
+/*----------------------- LOW COST & PREMIUM DELUXE ---------------------- */
 
 .contenidolowcost {
     overflow: hidden;
 }
 
+.contenidopremium {
+    overflow: hidden;
+    background-image: url(../img/SL-101521-46190-02.jpg);
+    color: gold;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
 /* imagen de la familia colocada a la izquierda dejando el texto a su alrededor*/
+
 .imgpresu {
     float: left;
     width: 40rem;
     height: 25rem;
     margin: 20px 20px 20px 20px;
+    border: 3px solid black;
+    border-radius: 15px; 
 
 }
 
 /* imagen de la comida colocada a la derecha dejando el texto a su alrededor*/
+
 .imgcomi {
     float: right;
     width: 20rem;
     height: 20rem;
     margin: 40px 20px 40px 20px;
-
-
+    border-radius: 15px; 
+    border: 3px solid rgb(145, 8, 85);
 }
 
 /* para centrar solo el eslogan sin usar html*/
+
 .textcent {
     text-align: center;
 }
 
 /* para que la lista no quede pegada a la izquierda*/
 
-ul,
-li {
+.servicios {
     margin-left: 1rem;
 }
 
-/* hover en el enlace que lleva al menú*/
+.imgdeluxe {
+    float: right;
+    width: 40rem;
+    height: 25rem;
+    margin: 20px 20px 20px 20px;
+    border: 3px solid rgb(183, 215, 2);
+    border-radius: 15px; 
+
+}
+
+/* hover en el enlace de lowcost y premium que lleva al menú (de comida)*/
+
+menulcprem{
+    color: rgba(248, 241, 24, 0.897);
+}
 
 .menulc:hover {
     background-color: rgba(73, 150, 212, 0.712);
     color: rgb(251, 255, 4);
 }
 
-/* Las tablas son complicadas, he jugado con los porcentajes, dandole un 80% de la pantalla máximo 90%*/
+.menulcprem:hover {
+    background-color: rgba(170, 212, 73, 0.712);
+    color: rgb(251, 255, 4);
+}
+
+/* El link hacía que las letras en deluxe se quedasen oscuras, así que
+he puesto un atributo visited para que conserve el color de la fuente */
+
+.menulcprem:visited {
+    color: inherit; 
+}
+/*-------------------------MENÚS (de comida y bebida)-----------------------------*/
+/*-------  Las tablas son complicadas con CSS, he jugado con los porcentajes,
+ dandole un 80% de la pantalla, máximo 90% para que no se viesen raras o deformadas--------*/
+
 
 table {
     margin: auto;
@@ -674,6 +753,12 @@ td {
     font-weight: bold;
 }
 
+.contenidodeluxe {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid gold;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+}
+
 .contenidodeluxe table {
     margin: auto;
     width: 80%;
@@ -682,6 +767,7 @@ td {
     background-color: #f9f9f9;
     color: #000;
 }
+
 .contenidodeluxe caption {
     font-size: 1.5rem;
     font-weight: bold;
@@ -692,4 +778,144 @@ td {
     border: 1px solid #ccc;
     padding: 8px;
     text-align: center;
+}
+
+
+/*----------------------- FORMULARIO CONTACTO ---------------------- */
+
+body.contacto {
+    background-image: url(../img/optimized.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: repeat;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+div.contacto {
+    text-align: center;
+    padding: 1rem;
+}
+
+.contacto h1 {
+    font-family: 'body';
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: solid 0.1rem wheat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(24, 24, 26, 0.749);
+    color: rgb(255, 255, 255);
+}
+
+form {
+    width: 900px;
+    max-width: 900px;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    /*background-color: rgb(35, 60, 137);*/
+    text-align: left;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    background-image: url(../img/6467569.jpg);
+}
+
+form fieldset legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.fila-sola {
+    margin-left: 1rem;
+}
+
+.fila-doble {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 0.5rem;
+}
+
+.campo label {
+    margin-bottom: 0.3rem;
+    text-align: left;
+}
+
+.campo input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.campo select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+fieldset div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+fieldset label {
+    flex: 1;
+}
+
+.label-mensaje {
+    font-size: 0.9rem;
+    color: rgb(255, 150, 150);
+    padding-bottom: 0.5rem;
+}
+
+textarea {
+    height: 5rem;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.botonnave {
+    width: 7rem;
+    height: 7rem;
+    border: none;
+    border-radius: 50%;
+    background-image: url('../img/botonenviar.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 1px yellow;
+
+}
+
+.botonnave.reset {
+    background-image: url('../img/botonborrar.png');
+    border: solid 1px yellow;
+}
+
+.botonnave:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.6);
 }
