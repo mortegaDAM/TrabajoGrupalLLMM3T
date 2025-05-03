@@ -629,8 +629,9 @@ body.simulador-viajes {
 
 .contenidopremium {
     overflow: hidden;
-    background: linear-gradient(to bottom, #110351, #000000);
-    color: rgba(248, 241, 24, 0.897);
+    background-image: url(../img/SL-101521-46190-02.jpg);
+    color: gold;
+    font-weight: bold;
     border-radius: 5px;
 }
 
