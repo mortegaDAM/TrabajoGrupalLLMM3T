@@ -630,6 +630,10 @@ body.simulador-viajes {
 
 /*----------------------- LOW COST & PREMIUM DELUXE ---------------------- */
 
+/* Puse un "overflow:hidden" porque las imágenes se salían de los márgenes de los recuadros
+contenido y reseña, creados por mi compañero y aprovechados por mi para mantener
+consistencia en la web*/
+
 .contenidolowcost {
     overflow: hidden;
 }
@@ -644,7 +648,7 @@ body.simulador-viajes {
 
 
 
-/* imagen de la familia colocada a la izquierda dejando el texto a su alrededor*/
+/* imagen de la familia colocada con el "float" a la izquierda dejando el texto a su alrededor con "margin"*/
 
 .imgpresu {
     float: left;
@@ -710,9 +714,11 @@ he puesto un atributo visited para que conserve el color de la fuente */
 
 .menulcprem:visited {
     color: inherit;
+    text-decoration: none;
 }
 
 /*-------------------------MENÚS (de comida y bebida)-----------------------------*/
+
 /*-------  Las tablas son complicadas con CSS, he jugado con los porcentajes,
  dandole un 80% de la pantalla, máximo 90% para que no se viesen raras o deformadas--------*/
 
@@ -761,6 +767,8 @@ td {
     font-weight: bold;
 }
 
+/* -- BRillo externo con sombra amarilla a la caja para dar sensación de lujo -- */
+
 .contenidodeluxe {
     background-color: rgba(255, 255, 255, 0.85);
     border: 2px solid gold;
@@ -791,6 +799,8 @@ td {
 
 /*----------------------- FORMULARIO CONTACTO ---------------------- */
 
+/* he centrado el formulario y le he dado formato "columna" y centrado con 
+el flex y el align */
 body.contacto {
     background-image: url(../img/optimized.webp);
     background-position: center;
@@ -801,6 +811,7 @@ body.contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
 }
 
@@ -810,8 +821,7 @@ div.contacto {
 }
 
 .contacto h1 {
-    font-family: 'body';
-    background-color: rgba(255, 255, 255, 0.8);
+    font-family: 'nombre';
     display: inline-block;
     padding: 10px 20px;
     border-radius: 10px;
@@ -823,9 +833,15 @@ div.contacto {
 }
 
 form {
-    width: 900px;
+    width: 95%;
     max-width: 900px;
+    margin: 0 auto;
+    display: block;
 }
+
+/* tuve problemas con el formulario porque se me descolocaba fácilmente, así que
+fui ensayo y error jugando con margin, padding y display flex hasta conseguir 
+el resultado que quería */
 
 form fieldset {
     display: flex;
@@ -846,6 +862,9 @@ form fieldset legend {
 .fila-sola {
     margin-left: 1rem;
 }
+
+/* usé una medida de 1rem con gap para dar el mismo espacio entre los dos objetos 
+el formulario */
 
 .fila-doble {
     display: flex;
@@ -885,7 +904,8 @@ fieldset div {
 }
 
 fieldset label {
-    flex: 1;
+    display: block;
+    width: 100%;
 }
 
 .label-mensaje {
@@ -923,6 +943,9 @@ textarea {
     border: solid 1px yellow;
 }
 
+/* transform scale hace que los botones se haga un poco más grandes
+para dar  un efecto chulo al señalarlos */
+
 .botonnave:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.6);
@@ -932,8 +955,14 @@ textarea {
 
 .fondospacenews {
     background-image: url(../img/fondo2.jpg);
+    background-size: cover;
 
 }
+
+
+/* como no sabíamos si ibamos a poder hacer web responsive, puse un 
+display flex wrap para que si las imágenes no cabían en pantalla
+se pusieran una debajo de la otra */
 
 .noticias-dos {
     display: flex;
