@@ -414,7 +414,7 @@ body.simulador-viajes {
     background-position: center;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
 
@@ -486,7 +486,7 @@ body.simulador-viajes {
     gap: 500px;
     /* espacio entre el slider y la descripción */
     margin-top: 50px;
-    margin-right: 100px;
+    margin-right: -150px;
     padding: 0 30px;
 
 }
@@ -527,7 +527,7 @@ body.simulador-viajes {
     background-position: center;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     position: relative;
